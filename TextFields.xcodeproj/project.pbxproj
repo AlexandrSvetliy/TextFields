@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A845A2231EB9240B0070D258 /* ASNibBasedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A845A21F1EB9240B0070D258 /* ASNibBasedView.m */; };
+		A845A2241EB9240B0070D258 /* CountryPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A845A2211EB9240B0070D258 /* CountryPickerView.m */; };
+		A845A2251EB9240B0070D258 /* CountryPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A845A2221EB9240B0070D258 /* CountryPickerView.xib */; };
 		A8C991191EB8C0EF00A32BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C991181EB8C0EF00A32BF4 /* main.m */; };
 		A8C9911C1EB8C0EF00A32BF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C9911B1EB8C0EF00A32BF4 /* AppDelegate.m */; };
 		A8C9911F1EB8C0EF00A32BF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C9911E1EB8C0EF00A32BF4 /* ViewController.m */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A845A21E1EB9240B0070D258 /* ASNibBasedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNibBasedView.h; sourceTree = "<group>"; };
+		A845A21F1EB9240B0070D258 /* ASNibBasedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNibBasedView.m; sourceTree = "<group>"; };
+		A845A2201EB9240B0070D258 /* CountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryPickerView.h; sourceTree = "<group>"; };
+		A845A2211EB9240B0070D258 /* CountryPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryPickerView.m; sourceTree = "<group>"; };
+		A845A2221EB9240B0070D258 /* CountryPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryPickerView.xib; sourceTree = "<group>"; };
 		A8C991141EB8C0EF00A32BF4 /* TextFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C991181EB8C0EF00A32BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8C9911A1EB8C0EF00A32BF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +86,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A845A21D1EB9240B0070D258 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				A845A21E1EB9240B0070D258 /* ASNibBasedView.h */,
+				A845A21F1EB9240B0070D258 /* ASNibBasedView.m */,
+				A845A2201EB9240B0070D258 /* CountryPickerView.h */,
+				A845A2211EB9240B0070D258 /* CountryPickerView.m */,
+				A845A2221EB9240B0070D258 /* CountryPickerView.xib */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
 		A8C9910B1EB8C0EF00A32BF4 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +126,7 @@
 				A8C9911D1EB8C0EF00A32BF4 /* ViewController.h */,
 				A8C9911E1EB8C0EF00A32BF4 /* ViewController.m */,
 				A8C991201EB8C0EF00A32BF4 /* Main.storyboard */,
+				A845A21D1EB9240B0070D258 /* Pickers */,
 				A8C991231EB8C0EF00A32BF4 /* Assets.xcassets */,
 				A8C991251EB8C0EF00A32BF4 /* LaunchScreen.storyboard */,
 				A8C991281EB8C0EF00A32BF4 /* Info.plist */,
@@ -252,6 +273,7 @@
 				A8C991271EB8C0EF00A32BF4 /* LaunchScreen.storyboard in Resources */,
 				A8C991241EB8C0EF00A32BF4 /* Assets.xcassets in Resources */,
 				A8C991221EB8C0EF00A32BF4 /* Main.storyboard in Resources */,
+				A845A2251EB9240B0070D258 /* CountryPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +300,8 @@
 			files = (
 				A8C9911F1EB8C0EF00A32BF4 /* ViewController.m in Sources */,
 				A8C9911C1EB8C0EF00A32BF4 /* AppDelegate.m in Sources */,
+				A845A2241EB9240B0070D258 /* CountryPickerView.m in Sources */,
+				A845A2231EB9240B0070D258 /* ASNibBasedView.m in Sources */,
 				A8C991191EB8C0EF00A32BF4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +540,7 @@
 				A8C991431EB8C0F000A32BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8C991441EB8C0F000A32BF4 /* Build configuration list for PBXNativeTarget "TextFieldsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +549,7 @@
 				A8C991461EB8C0F000A32BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8C991471EB8C0F000A32BF4 /* Build configuration list for PBXNativeTarget "TextFieldsUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +558,7 @@
 				A8C991491EB8C0F000A32BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
