@@ -59,6 +59,9 @@
                 </view>
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyk-R0-54g">
                     <rect key="frame" x="0.0" y="50" width="375" height="215"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="4ur-r6-3v9"/>
+                    </connections>
                 </pickerView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

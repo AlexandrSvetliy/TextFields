@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class CountryPickerView;
+
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-
+@property (strong, nonatomic) IBOutlet CountryPickerView *countryPicker;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *coutryPickerBottomOffset;
 
 @end
 
