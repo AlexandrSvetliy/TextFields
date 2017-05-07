@@ -9,16 +9,18 @@
 #import "ViewController.h"
 
 @interface ViewController()
-@property (strong, nonatomic) IBOutlet UIScrollView       *scrollView;
-@property (strong, nonatomic) IBOutlet CountryPickerView  *countryPicker;
-@property (strong, nonatomic) IBOutlet BirthdayPickerView *birthdayPicker;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *coutryPickerBottomOffset;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *birthdayPickerBottomOffset;
+@property (strong, nonatomic) IBOutlet UIScrollView*        scrollView;
+@property (strong, nonatomic) IBOutlet CountryPickerView*   countryPicker;
+@property (strong, nonatomic) IBOutlet BirthdayPickerView*  birthdayPicker;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint*  coutryPickerBottomOffset;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint*  birthdayPickerBottomOffset;
+@property (strong, nonatomic)          NSMutableArray*      usersArray;
 
 @property (weak, nonatomic) IBOutlet UITextField* firstName;
 @property (weak, nonatomic) IBOutlet UITextField* lastName;
 @property (weak, nonatomic) IBOutlet UITextField* birthday;
 @property (weak, nonatomic) IBOutlet UITextField* country;
+@property (weak, nonatomic) IBOutlet UISwitch *sex;
 @property (weak, nonatomic)          UITextField* lastResponder;
 @end
 
@@ -26,21 +28,12 @@
 
 @synthesize scrollView;
 @synthesize coutryPickerBottomOffset,birthdayPickerBottomOffset;
-@synthesize firstName,lastName,birthday,country,lastResponder;
+@synthesize firstName,lastName,birthday,country,lastResponder,sex;
 
 #pragma mark - Initialization
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
-    if (self) {
-        _countryPicker = nil;
-        _birthdayPicker = nil;
-    }
-    return self;
-}
-
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         _countryPicker = nil;
         _birthdayPicker = nil;
@@ -57,6 +50,7 @@
     self.countryPicker.delegate = self;
     self.birthdayPicker.delegate = self;
     lastResponder = nil;
+    self.usersArray = [[NSMutableArray alloc] init];
 }
 
 #pragma mark - TextFields states
@@ -82,6 +76,13 @@
     lastResponder = textField;
     
     return YES;
+}
+- (void)cleanTextFeilds {
+    firstName.text = @"";
+    lastName.text = @"";
+    [sex setOn:NO animated:YES];
+    country.text = @"";
+    birthday.text = @"";
 }
 
 #pragma mark - Picker manage methods
@@ -124,11 +125,31 @@
 }
 - (void)doneButtonPressedWithBirthdayDate:(NSDate *)birthdayDate{
     [self hideSomePickerWithOffset:coutryPickerBottomOffset];
-    //NSString *dateString = [NSDateFormatter localizedStringFromDate:birthdayDate dateStyle:NSDateFormatterLongStyle timeStyle:NSDateFormatterLongStyle];
-    //birthday.text = [NSString stringWithFormat:@"%@",dateString];
     NSDateFormatter *formater = [[NSDateFormatter alloc] init];
-    [formater setDateFormat:@"dd.mm.YYYY"];
+    [formater setDateFormat:dateFormat];
     birthday.text = [formater stringFromDate:birthdayDate];
     [self hideSomePickerWithOffset:birthdayPickerBottomOffset];
 }
+
+#pragma mark - Actions
+
+- (IBAction)createButtonPressed:(UIButton *)sender {
+    NSDateFormatter *formater = [[NSDateFormatter alloc] init];
+    [formater setDateFormat:dateFormat];
+    
+    User* user = [[User alloc] initWithFirstName:firstName.text
+                                        LastName:lastName.text
+                                             Sex:sex.isOn
+                                        Birthday:[formater dateFromString:birthday.text]
+                                         Country:country.text];
+    [self.usersArray addObject:user];
+    [self showAlertWithMessage:[[self.usersArray lastObject] getUserInfo]];
+    [self cleanTextFeilds];
+}
+- (void)showAlertWithMessage:(NSString*)message {
+    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"User created"  message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alertView addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    [self presentViewController:alertView animated:YES completion:nil];
+}
+
 @end

@@ -12,6 +12,7 @@
 		A81D493E1EBF60F600B19A9C /* CountryPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A81D493B1EBF60F600B19A9C /* CountryPickerView.xib */; };
 		A81D49411EBF613500B19A9C /* BirthdayPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D49401EBF613500B19A9C /* BirthdayPickerView.m */; };
 		A81D49431EBF615400B19A9C /* BirthdayPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A81D49421EBF615400B19A9C /* BirthdayPickerView.xib */; };
+		A81D49551EBF91CB00B19A9C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D49541EBF91CB00B19A9C /* User.m */; };
 		A8C991191EB8C0EF00A32BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C991181EB8C0EF00A32BF4 /* main.m */; };
 		A8C9911C1EB8C0EF00A32BF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C9911B1EB8C0EF00A32BF4 /* AppDelegate.m */; };
 		A8C9911F1EB8C0EF00A32BF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C9911E1EB8C0EF00A32BF4 /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		A81D493F1EBF613500B19A9C /* BirthdayPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayPickerView.h; sourceTree = "<group>"; };
 		A81D49401EBF613500B19A9C /* BirthdayPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayPickerView.m; sourceTree = "<group>"; };
 		A81D49421EBF615400B19A9C /* BirthdayPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BirthdayPickerView.xib; sourceTree = "<group>"; };
+		A81D49531EBF91CB00B19A9C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A81D49541EBF91CB00B19A9C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A8C991141EB8C0EF00A32BF4 /* TextFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C991181EB8C0EF00A32BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8C9911A1EB8C0EF00A32BF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +125,15 @@
 			path = CountryPickerView;
 			sourceTree = "<group>";
 		};
+		A81D49521EBF91CB00B19A9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A81D49531EBF91CB00B19A9C /* User.h */,
+				A81D49541EBF91CB00B19A9C /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A8C9910B1EB8C0EF00A32BF4 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +163,7 @@
 				A8C9911E1EB8C0EF00A32BF4 /* ViewController.m */,
 				A8C991201EB8C0EF00A32BF4 /* Main.storyboard */,
 				A81D49341EBF60F600B19A9C /* Pickers */,
+				A81D49521EBF91CB00B19A9C /* Models */,
 				A8C991231EB8C0EF00A32BF4 /* Assets.xcassets */,
 				A8C991251EB8C0EF00A32BF4 /* LaunchScreen.storyboard */,
 				A8C991281EB8C0EF00A32BF4 /* Info.plist */,
@@ -324,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C9911F1EB8C0EF00A32BF4 /* ViewController.m in Sources */,
+				A81D49551EBF91CB00B19A9C /* User.m in Sources */,
 				A8C9911C1EB8C0EF00A32BF4 /* AppDelegate.m in Sources */,
 				A81D493D1EBF60F600B19A9C /* CountryPickerView.m in Sources */,
 				A81D49411EBF613500B19A9C /* BirthdayPickerView.m in Sources */,

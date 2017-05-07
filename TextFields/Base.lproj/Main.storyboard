@@ -76,8 +76,11 @@
                                                 <rect key="frame" x="28" y="440" width="320" height="40"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
                                                 <state key="normal" title="CREATE"/>
+                                                <connections>
+                                                    <action selector="createButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VwO-jK-mQD"/>
+                                                </connections>
                                             </button>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3OO-H0-i5B">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3OO-H0-i5B">
                                                 <rect key="frame" x="163" y="300" width="51" height="31"/>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfA-t5-0Nd">
@@ -181,6 +184,7 @@
                         <outlet property="firstName" destination="O0j-W0-esR" id="hOj-H7-Q42"/>
                         <outlet property="lastName" destination="Blh-n7-9Ps" id="gGE-HX-H9E"/>
                         <outlet property="scrollView" destination="yiU-4Z-aWA" id="NOB-EC-rNk"/>
+                        <outlet property="sex" destination="3OO-H0-i5B" id="lJS-GO-Cqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
