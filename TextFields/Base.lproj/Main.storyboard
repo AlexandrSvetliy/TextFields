@@ -63,7 +63,7 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="s31-PU-8ya"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0VD-HK-5Z1">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0VD-HK-5Z1">
                                                 <rect key="frame" x="28" y="230" width="320" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -149,20 +149,32 @@
                                     <constraint firstAttribute="height" constant="265" id="DSa-WN-2Yo"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEo-jd-BGX" userLabel="Birthday Picker View" customClass="BirthdayPickerView">
+                                <rect key="frame" x="0.0" y="402" width="375" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="FWx-3P-fph"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2nU-HT-CHA" secondAttribute="bottom" id="9Zz-8W-YUZ" userLabel="Picker Bottom Offset"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2nU-HT-CHA" secondAttribute="bottom" id="9Zz-8W-YUZ" userLabel="Country Picker Bottom Offset"/>
                             <constraint firstItem="2nU-HT-CHA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pnp-uA-U6A"/>
+                            <constraint firstAttribute="trailing" secondItem="cEo-jd-BGX" secondAttribute="trailing" id="S81-PQ-sy4"/>
                             <constraint firstItem="yiU-4Z-aWA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b9y-U0-52a"/>
                             <constraint firstAttribute="trailing" secondItem="yiU-4Z-aWA" secondAttribute="trailing" id="hM6-s8-dCA"/>
                             <constraint firstItem="yiU-4Z-aWA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="n6I-HF-d9S"/>
                             <constraint firstItem="PhX-Ur-Bry" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="sFp-Kr-86n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cEo-jd-BGX" secondAttribute="bottom" id="tXe-9V-5Ku" userLabel="Birthday Picker Bottom Offset"/>
+                            <constraint firstItem="cEo-jd-BGX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vU7-8X-wVw"/>
                             <constraint firstAttribute="trailing" secondItem="2nU-HT-CHA" secondAttribute="trailing" id="x5d-Ox-LJR"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="age" destination="0VD-HK-5Z1" id="Hxb-rt-k7V"/>
+                        <outlet property="birthday" destination="0VD-HK-5Z1" id="glh-Yf-XML"/>
+                        <outlet property="birthdayPicker" destination="cEo-jd-BGX" id="BES-J8-nFf"/>
+                        <outlet property="birthdayPickerBottomOffset" destination="tXe-9V-5Ku" id="jrW-3C-zOB"/>
                         <outlet property="country" destination="kiA-Jk-9np" id="DeL-I0-PMV"/>
                         <outlet property="countryPicker" destination="2nU-HT-CHA" id="DhT-KZ-e0O"/>
                         <outlet property="coutryPickerBottomOffset" destination="9Zz-8W-YUZ" id="tCD-Fc-PWC"/>

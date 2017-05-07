@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CountryPickerView.h"
+#import "BirthdayPickerView.h"
 
-@class CountryPickerView;
+static const CGFloat ASPickerHeight = 265;
+static const CGFloat ASAnimationDuration = 0.4;
 
-@interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutlet CountryPickerView *countryPicker;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *coutryPickerBottomOffset;
-
+@interface ViewController : UIViewController <CountryPickerViewDelegate,BirthdayPickerViewDelegate>
 @end
 

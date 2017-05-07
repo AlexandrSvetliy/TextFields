@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A845A2231EB9240B0070D258 /* ASNibBasedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A845A21F1EB9240B0070D258 /* ASNibBasedView.m */; };
-		A845A2241EB9240B0070D258 /* CountryPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A845A2211EB9240B0070D258 /* CountryPickerView.m */; };
-		A845A2251EB9240B0070D258 /* CountryPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A845A2221EB9240B0070D258 /* CountryPickerView.xib */; };
+		A81D493C1EBF60F600B19A9C /* ASNibBasedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D49361EBF60F600B19A9C /* ASNibBasedView.m */; };
+		A81D493D1EBF60F600B19A9C /* CountryPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D493A1EBF60F600B19A9C /* CountryPickerView.m */; };
+		A81D493E1EBF60F600B19A9C /* CountryPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A81D493B1EBF60F600B19A9C /* CountryPickerView.xib */; };
+		A81D49411EBF613500B19A9C /* BirthdayPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D49401EBF613500B19A9C /* BirthdayPickerView.m */; };
+		A81D49431EBF615400B19A9C /* BirthdayPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A81D49421EBF615400B19A9C /* BirthdayPickerView.xib */; };
 		A8C991191EB8C0EF00A32BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C991181EB8C0EF00A32BF4 /* main.m */; };
 		A8C9911C1EB8C0EF00A32BF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C9911B1EB8C0EF00A32BF4 /* AppDelegate.m */; };
 		A8C9911F1EB8C0EF00A32BF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C9911E1EB8C0EF00A32BF4 /* ViewController.m */; };
@@ -38,11 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A845A21E1EB9240B0070D258 /* ASNibBasedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNibBasedView.h; sourceTree = "<group>"; };
-		A845A21F1EB9240B0070D258 /* ASNibBasedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNibBasedView.m; sourceTree = "<group>"; };
-		A845A2201EB9240B0070D258 /* CountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryPickerView.h; sourceTree = "<group>"; };
-		A845A2211EB9240B0070D258 /* CountryPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryPickerView.m; sourceTree = "<group>"; };
-		A845A2221EB9240B0070D258 /* CountryPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryPickerView.xib; sourceTree = "<group>"; };
+		A81D49351EBF60F600B19A9C /* ASNibBasedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNibBasedView.h; sourceTree = "<group>"; };
+		A81D49361EBF60F600B19A9C /* ASNibBasedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNibBasedView.m; sourceTree = "<group>"; };
+		A81D49391EBF60F600B19A9C /* CountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryPickerView.h; sourceTree = "<group>"; };
+		A81D493A1EBF60F600B19A9C /* CountryPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryPickerView.m; sourceTree = "<group>"; };
+		A81D493B1EBF60F600B19A9C /* CountryPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryPickerView.xib; sourceTree = "<group>"; };
+		A81D493F1EBF613500B19A9C /* BirthdayPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayPickerView.h; sourceTree = "<group>"; };
+		A81D49401EBF613500B19A9C /* BirthdayPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayPickerView.m; sourceTree = "<group>"; };
+		A81D49421EBF615400B19A9C /* BirthdayPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BirthdayPickerView.xib; sourceTree = "<group>"; };
 		A8C991141EB8C0EF00A32BF4 /* TextFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C991181EB8C0EF00A32BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8C9911A1EB8C0EF00A32BF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,16 +91,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A845A21D1EB9240B0070D258 /* Pickers */ = {
+		A81D49341EBF60F600B19A9C /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
-				A845A21E1EB9240B0070D258 /* ASNibBasedView.h */,
-				A845A21F1EB9240B0070D258 /* ASNibBasedView.m */,
-				A845A2201EB9240B0070D258 /* CountryPickerView.h */,
-				A845A2211EB9240B0070D258 /* CountryPickerView.m */,
-				A845A2221EB9240B0070D258 /* CountryPickerView.xib */,
+				A81D49351EBF60F600B19A9C /* ASNibBasedView.h */,
+				A81D49361EBF60F600B19A9C /* ASNibBasedView.m */,
+				A81D49371EBF60F600B19A9C /* BirthdayPickerView */,
+				A81D49381EBF60F600B19A9C /* CountryPickerView */,
 			);
 			path = Pickers;
+			sourceTree = "<group>";
+		};
+		A81D49371EBF60F600B19A9C /* BirthdayPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A81D493F1EBF613500B19A9C /* BirthdayPickerView.h */,
+				A81D49401EBF613500B19A9C /* BirthdayPickerView.m */,
+				A81D49421EBF615400B19A9C /* BirthdayPickerView.xib */,
+			);
+			path = BirthdayPickerView;
+			sourceTree = "<group>";
+		};
+		A81D49381EBF60F600B19A9C /* CountryPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A81D49391EBF60F600B19A9C /* CountryPickerView.h */,
+				A81D493A1EBF60F600B19A9C /* CountryPickerView.m */,
+				A81D493B1EBF60F600B19A9C /* CountryPickerView.xib */,
+			);
+			path = CountryPickerView;
 			sourceTree = "<group>";
 		};
 		A8C9910B1EB8C0EF00A32BF4 = {
@@ -126,7 +150,7 @@
 				A8C9911D1EB8C0EF00A32BF4 /* ViewController.h */,
 				A8C9911E1EB8C0EF00A32BF4 /* ViewController.m */,
 				A8C991201EB8C0EF00A32BF4 /* Main.storyboard */,
-				A845A21D1EB9240B0070D258 /* Pickers */,
+				A81D49341EBF60F600B19A9C /* Pickers */,
 				A8C991231EB8C0EF00A32BF4 /* Assets.xcassets */,
 				A8C991251EB8C0EF00A32BF4 /* LaunchScreen.storyboard */,
 				A8C991281EB8C0EF00A32BF4 /* Info.plist */,
@@ -273,7 +297,8 @@
 				A8C991271EB8C0EF00A32BF4 /* LaunchScreen.storyboard in Resources */,
 				A8C991241EB8C0EF00A32BF4 /* Assets.xcassets in Resources */,
 				A8C991221EB8C0EF00A32BF4 /* Main.storyboard in Resources */,
-				A845A2251EB9240B0070D258 /* CountryPickerView.xib in Resources */,
+				A81D49431EBF615400B19A9C /* BirthdayPickerView.xib in Resources */,
+				A81D493E1EBF60F600B19A9C /* CountryPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +325,9 @@
 			files = (
 				A8C9911F1EB8C0EF00A32BF4 /* ViewController.m in Sources */,
 				A8C9911C1EB8C0EF00A32BF4 /* AppDelegate.m in Sources */,
-				A845A2241EB9240B0070D258 /* CountryPickerView.m in Sources */,
-				A845A2231EB9240B0070D258 /* ASNibBasedView.m in Sources */,
+				A81D493D1EBF60F600B19A9C /* CountryPickerView.m in Sources */,
+				A81D49411EBF613500B19A9C /* BirthdayPickerView.m in Sources */,
+				A81D493C1EBF60F600B19A9C /* ASNibBasedView.m in Sources */,
 				A8C991191EB8C0EF00A32BF4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

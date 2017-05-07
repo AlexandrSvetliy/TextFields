@@ -8,8 +8,17 @@
 
 #import "ASNibBasedView.h"
 
-IB_DESIGNABLE @interface CountryPickerView : ASNibBasedView
+@protocol CountryPickerViewDelegate <NSObject>
 
-@property (nonatomic, strong) IBInspectable UIColor *pickerColor;
+- (void)doneButtonPressedWithSelectedCountry:(NSString *)selectedCountry;
+- (void)pickerDidSelectCountry:(NSString*)selectedCountry;
 
 @end
+
+IB_DESIGNABLE @interface CountryPickerView : ASNibBasedView
+
+@property (weak,nonatomic) id <CountryPickerViewDelegate>delegate;
+
+@end
+
+

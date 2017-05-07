@@ -8,11 +8,12 @@
 
 #import "CountryPickerView.h"
 
-@interface CountryPickerView () <UIPickerViewDelegate>
+@interface CountryPickerView ()
 
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
-@property (strong, nonatomic) IBOutlet UIView *backgroundView;
-@property (nonatomic, strong) NSArray *countries;
+
+@property (strong, nonatomic) NSArray *countries;
+@property (copy  , nonatomic) NSString *selectedCountry;
 
 @end
 
@@ -23,15 +24,17 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.countries = [NSLocale ISOCountryCodes];
-    self.backgroundView.backgroundColor = self.pickerColor;
 }
 
 #pragma mark - Actions
 
 - (IBAction)doneButtonPressed:(UIButton *)sender {
+    [self.delegate doneButtonPressedWithSelectedCountry:self.selectedCountry];
 }
-
 - (IBAction)locateButtonPressed:(UIButton *)sender {
+    NSString *countryCode = [[NSLocale currentLocale] objectForKey: NSLocaleCountryCode];
+    [self.picker selectRow:[self.countries indexOfObject:countryCode] inComponent:0 animated:YES];
+    [self pickerView:self.picker didSelectRow:[self.countries indexOfObject:countryCode] inComponent:0];
 }
 
 #pragma mark - Picker DataSource methods
@@ -49,6 +52,7 @@
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    
+    self.selectedCountry = [[NSLocale currentLocale] displayNameForKey:NSLocaleCountryCode value:self.countries[row]];
+    [self.delegate pickerDidSelectCountry:self.selectedCountry];
 }
 @end

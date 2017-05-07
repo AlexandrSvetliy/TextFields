@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ASNibBasedView : UIView
-
+- (void)xibSetup;
 @end
