@@ -8,9 +8,19 @@
 
 #import "User.h"
 
+@interface User()
+
+@property (nonatomic, copy)   NSString *firstName;
+@property (nonatomic, copy)   NSString *lastName;
+@property (nonatomic, assign) NSDate *birthday;
+@property (nonatomic, assign) BOOL sex;
+@property (nonatomic, copy)   NSString *country;
+
+@end
+
 @implementation User
 
-- (instancetype)init{
+- (instancetype)init {
     self = [super init];
     if (self) {
         _firstName = @"";
