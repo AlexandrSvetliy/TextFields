@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ASNibBasedView : UIView
-- (void)xibSetup;
+- (UIView *)loadViewFromNib;
+- (void)prepareForInterfaceBuilder;
+- (void)initializeProperties;
 @end
