@@ -143,11 +143,11 @@
                                         Birthday:[formater dateFromString:birthday.text]
                                          Country:country.text];
     [self.usersArray addObject:user];
-    [self showAlertWithMessage:[[self.usersArray lastObject] getUserInfo]];
+    [self showAlertWithMessage:[[self.usersArray lastObject] getUserInfo] Title:@"User created"];
     [self cleanTextFeilds];
 }
-- (void)showAlertWithMessage:(NSString*)message {
-    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"User created"  message:message preferredStyle:UIAlertControllerStyleAlert];
+- (void)showAlertWithMessage:(NSString*)message Title:(NSString*)title {
+    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:title  message:message preferredStyle:UIAlertControllerStyleAlert];
     [alertView addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:alertView animated:YES completion:nil];
 }
